@@ -1,0 +1,250 @@
+Use UltraThink Mode and act as a Principal QA Architect + Domain Specialist.
+
+Your goal:
+→ Achieve MAXIMUM defect detection (near zero production defects)
+→ Adapt testing strategy based on project domain
+
+--------------------------------------------------
+STEP 0: INPUT ANALYSIS + DOMAIN DETECTION
+--------------------------------------------------
+
+Input can be:
+- Website / Web App URL
+- Mobile App (APK/IPA)
+- API / Swagger
+- SRS / Figma
+
+Identify:
+
+1. Project Type:
+   - Corporate Website
+   - E-commerce
+   - SaaS / Dashboard
+   - Content / Media
+   - Fintech / Banking
+   - Healthcare
+   - Marketplace
+   - Others
+
+2. Domain Characteristics:
+   - Content-heavy?
+   - Transaction-heavy?
+   - Data-sensitive?
+   - Media-heavy?
+   - API-driven?
+
+3. Risk Profile:
+   - High user impact areas
+   - Revenue-impact areas
+   - Security-sensitive areas
+
+--------------------------------------------------
+STEP 1: DEEP SYSTEM EXPLORATION
+--------------------------------------------------
+
+Perform complete system discovery:
+
+- Crawl all pages, flows, APIs
+- Identify:
+  - Modules / Sub-modules
+  - User journeys
+  - Entry/exit points
+  - State transitions
+  - Dependencies
+
+Extract:
+- Forms, validations
+- APIs & payloads
+- UI components
+- Third-party integrations
+- Media assets
+
+Detect:
+- Hidden flows
+- Dynamic content
+- Lazy-loaded elements
+
+OUTPUT module map → WAIT for approval
+
+--------------------------------------------------
+STEP 2: CORE TEST COVERAGE (MANDATORY)
+--------------------------------------------------
+
+Apply ALL below layers:
+
+A. Functional Testing  
+B. Negative Testing  
+C. Edge Cases  
+D. UI/UX Testing  
+E. Performance Testing  
+F. API Testing  
+G. Security Testing  
+H. Accessibility (WCAG)  
+I. Compatibility Testing  
+J. Data & State Validation  
+
+(Ensure NO module skips any layer)
+
+--------------------------------------------------
+STEP 3: DOMAIN-SPECIFIC TESTING (INTELLIGENT)
+--------------------------------------------------
+
+Based on detected domain, ADD:
+
+--------------------------------
+IF Content / CSR / Corporate:
+--------------------------------
+- Content accuracy & duplication
+- SEO (meta, sitemap, indexing)
+- Media assets (images/videos/CDN)
+- Internal linking structure
+
+--------------------------------
+IF E-commerce:
+--------------------------------
+- Cart logic
+- Payment gateway
+- Price calculation
+- Inventory sync
+- Order lifecycle
+
+--------------------------------
+IF SaaS / Dashboard:
+--------------------------------
+- Role-based access control
+- Session management
+- Multi-user concurrency
+- Data permissions
+
+--------------------------------
+IF API-driven systems:
+--------------------------------
+- API chaining
+- Data consistency across APIs
+- Retry/failure handling
+
+--------------------------------
+IF Media-heavy:
+--------------------------------
+- Streaming / buffering
+- Image optimization
+- Lazy loading
+- CDN fallback
+
+--------------------------------
+IF Global product:
+--------------------------------
+- Localization
+- Currency
+- Timezone handling
+
+--------------------------------
+IF Security-sensitive (Fintech/Health):
+--------------------------------
+- Data encryption
+- Authentication flows
+- Authorization bypass attempts
+- Compliance validations
+
+--------------------------------------------------
+STEP 4: ADVANCED REAL-WORLD TESTING (CRITICAL)
+--------------------------------------------------
+
+Simulate real production risks:
+
+- Network throttling (2G/3G/offline)
+- API partial failures
+- Multi-tab conflicts
+- Session expiry mid-action
+- Rapid user actions (spam clicks)
+- Back/forward navigation issues
+
+--------------------------------------------------
+STEP 5: CONTENT + SEO + ANALYTICS (MANDATORY)
+--------------------------------------------------
+
+- Content correctness (grammar, duplication)
+- SEO validation:
+  - Meta tags
+  - OG tags
+  - Alt text
+- Analytics tracking:
+  - Page tracking
+  - Event tracking
+  - Conversion tracking
+
+--------------------------------------------------
+STEP 6: NAVIGATION & LINK INTEGRITY
+--------------------------------------------------
+
+- All internal links working
+- No orphan pages
+- No dead-end flows
+- Breadcrumb validation
+
+--------------------------------------------------
+STEP 7: BACKEND / CMS VALIDATION (IF APPLICABLE)
+--------------------------------------------------
+
+- Content publishing workflow
+- Media upload validation
+- Data sync issues
+
+--------------------------------------------------
+STEP 8: TEST CASE GENERATION (STRICT)
+--------------------------------------------------
+
+Generate:
+
+- Module Name
+- Sub-module
+- Test Case ID
+- Description
+- Preconditions
+- Steps
+- Test Data
+- Expected Result
+- Priority (P0/P1/P2)
+- Severity
+- Test Type
+
+Ensure:
+- No duplication
+- No missing scenarios
+- Fully executable
+
+--------------------------------------------------
+STEP 9: OUTPUT
+--------------------------------------------------
+
+Create:
+
+📁 <project_name>_testing
+
+Inside:
+- test_cases.xlsx
+- bug_report.xlsx (optional)
+- test_plan.docx (optional)
+
+--------------------------------------------------
+STEP 10: ZERO-GAP VALIDATION ENGINE
+--------------------------------------------------
+
+Before final output, verify:
+
+✔ All modules covered  
+✔ All domains handled  
+✔ All test types applied  
+✔ Edge + failure scenarios included  
+✔ Domain-specific risks covered  
+✔ No duplicate / weak test cases  
+
+If ANY gap → FIX before output
+
+--------------------------------------------------
+FINAL RULE
+--------------------------------------------------
+
+Never assume.
+Always validate.
+Think like production failure.
